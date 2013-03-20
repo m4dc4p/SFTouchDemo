@@ -1,5 +1,5 @@
 //
-//  SFTouchViewController.h
+//  SFTouchAuthController.h
 //  SFTouchDemo
 //
 //  Created by Justin Bailey on 3/19/13.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SFOAuthCoordinator.h"
 
-@interface SFTouchViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@interface SFTouchAuthController : UIViewController<SFOAuthCoordinatorDelegate>
 
 @end

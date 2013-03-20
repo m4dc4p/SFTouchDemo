@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SFOAuthInfo.h"
 
 @interface SFTouchAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) SFOAuthInfo * cred;
 
++ (SFTouchAppDelegate *) sharedInstance;
 @end
