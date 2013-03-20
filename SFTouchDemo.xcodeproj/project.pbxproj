@@ -34,6 +34,8 @@
 		B1BAC08316F8DA5A00F8EB59 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BAC08216F8DA5A00F8EB59 /* SystemConfiguration.framework */; };
 		B1BAC08516F8DA6100F8EB59 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BAC08416F8DA6100F8EB59 /* Security.framework */; };
 		B1BAC08716F8DA7300F8EB59 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BAC08616F8DA7300F8EB59 /* libxml2.dylib */; };
+		B1BAC08E16FA265300F8EB59 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1BAC08D16FA265300F8EB59 /* icon.png */; };
+		B1BAC09016FA266400F8EB59 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1BAC08F16FA266400F8EB59 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -290,6 +292,8 @@
 		B1BAC08216F8DA5A00F8EB59 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B1BAC08416F8DA6100F8EB59 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B1BAC08616F8DA7300F8EB59 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B1BAC08D16FA265300F8EB59 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		B1BAC08F16FA266400F8EB59 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,6 +353,9 @@
 		B1BABF5D16F8BE9800F8EB59 /* SFTouchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B1BABF6616F8BE9800F8EB59 /* SFTouchAppDelegate.h */,
+				B1BABF6716F8BE9800F8EB59 /* SFTouchAppDelegate.m */,
+				B1BAC08816FA25A400F8EB59 /* Resources */,
 				B1BABF7A16F8C39500F8EB59 /* SFTouchAuthController.h */,
 				B1BABF7B16F8C39500F8EB59 /* SFTouchAuthController.m */,
 				B1BABF6F16F8BE9800F8EB59 /* MainStoryboard.storyboard */,
@@ -362,8 +369,6 @@
 		B1BABF5E16F8BE9800F8EB59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B1BABF6616F8BE9800F8EB59 /* SFTouchAppDelegate.h */,
-				B1BABF6716F8BE9800F8EB59 /* SFTouchAppDelegate.m */,
 				B1BAC08616F8DA7300F8EB59 /* libxml2.dylib */,
 				B1BAC08416F8DA6100F8EB59 /* Security.framework */,
 				B1BAC08216F8DA5A00F8EB59 /* SystemConfiguration.framework */,
@@ -747,6 +752,15 @@
 			path = sqlcipher;
 			sourceTree = "<group>";
 		};
+		B1BAC08816FA25A400F8EB59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1BAC08F16FA266400F8EB59 /* icon@2x.png */,
+				B1BAC08D16FA265300F8EB59 /* icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -806,6 +820,8 @@
 				B1BABF7116F8BE9800F8EB59 /* MainStoryboard.storyboard in Resources */,
 				B1BAC07516F8D95500F8EB59 /* openssl_license.txt in Resources */,
 				B1BAC07B16F8D95600F8EB59 /* LICENSE in Resources */,
+				B1BAC08E16FA265300F8EB59 /* icon.png in Resources */,
+				B1BAC09016FA266400F8EB59 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

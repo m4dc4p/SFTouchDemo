@@ -17,10 +17,10 @@
 @implementation SFTouchViewController
 
 - (void)viewWillAppear:(BOOL)animated {
-    BOOL loggedIn = [SFTouchAppDelegate sharedInstance].cred != nil;
+    BOOL loggedIn = [SFTouchAppDelegate storedCredentials].accessToken != nil;
 
-    self.loginButton.hidden = !loggedIn;
-    self.logoutButton.hidden = loggedIn;
+    self.loginButton.hidden = loggedIn;
+    self.logoutButton.hidden = !loggedIn;
 }
 
 - (IBAction)doLogin:(id)sender {

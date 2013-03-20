@@ -10,8 +10,8 @@
 
 @implementation SFTouchAppDelegate
 
-+ (SFTouchAppDelegate *) sharedInstance {
-    return (SFTouchAppDelegate *) UIApplication.sharedApplication.delegate;
++ (SFOAuthCredentials *) storedCredentials {
+    return [[SFOAuthCredentials alloc] initWithIdentifier:StoredCredentialKey clientId:RemoteAccessConsumerKey encrypted:NO];
 }
 
 @end

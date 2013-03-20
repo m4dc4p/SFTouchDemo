@@ -62,11 +62,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="XRh-Kb-tKt" secondAttribute="centerX" type="user" id="2D6-ga-tJd"/>
                             <constraint firstItem="VHL-C9-Svf" firstAttribute="leading" secondItem="XRh-Kb-tKt" secondAttribute="leading" type="default" id="2sv-lL-rSv"/>
-                            <constraint firstItem="XRh-Kb-tKt" firstAttribute="trailing" secondItem="VHL-C9-Svf" secondAttribute="trailing" type="default" id="Fb9-Kl-cos"/>
-                            <constraint firstItem="VHL-C9-Svf" firstAttribute="baseline" secondItem="XRh-Kb-tKt" secondAttribute="baseline" type="default" id="GeX-GZ-1Th"/>
-                            <constraint firstItem="XRh-Kb-tKt" firstAttribute="top" secondItem="mhf-xz-gnG" secondAttribute="top" constant="230" id="MCd-Hl-xH3"/>
-                            <constraint firstItem="VHL-C9-Svf" firstAttribute="centerX" secondItem="mhf-xz-gnG" secondAttribute="centerX" type="default" id="krG-c3-7SU"/>
+                            <constraint firstAttribute="bottom" secondItem="XRh-Kb-tKt" secondAttribute="bottom" constant="231" type="user" id="MEl-v8-lMw"/>
+                            <constraint firstItem="VHL-C9-Svf" firstAttribute="baseline" secondItem="XRh-Kb-tKt" secondAttribute="baseline" type="user" id="N03-6O-aho"/>
+                            <constraint firstAttribute="centerX" secondItem="VHL-C9-Svf" secondAttribute="centerX" type="user" id="Nk2-68-SDm"/>
+                            <constraint firstAttribute="bottom" secondItem="VHL-C9-Svf" secondAttribute="bottom" constant="231" type="user" id="l2w-TD-JAg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zop-cG-uZB"/>
@@ -95,6 +96,23 @@
             <point key="canvasLocation" x="-316" y="53"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SFTouchAuthController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SFTouchAuthController.h"/>
+        </class>
+        <class className="SFTouchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SFTouchViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doLogin:"/>
+                <relationship kind="action" name="doLogout:"/>
+                <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="logoutButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
